@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.lista-container {
+    display: flex;
+    min-height: 400px;
+    max-height: 100%;
+    min-width: 400px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+h1 {
+  margin: 10px;
+}
+
+button {
+  border: 1px solid rgb(27, 141, 212);
+  border-radius: 5px;
+  background-color: rgb(60, 197, 197);
+  color: white;
+  text-align: center;
+  padding: 2px 10px;
+}
+
+input[type="text"] {
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+
+#tasks {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.task-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  padding: 2px 10px 3px 5px;
+  background-color: #2a4d45;
+  color: white;
+}
+
+label, .night_mode {
+  margin-left: 10px;
+}
+
+:checked + label {
+  text-decoration: line-through;
+  color: grey;
+}
+
+.night {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+:checked + .night_mode {
+    text-decoration: none;
+}
